@@ -23,7 +23,7 @@ class Queue : public Object {
         // returns the number of elements in queue
         size_t size() {}
 
-        bool equals(Queue* e) {}
+        bool equals(Object* e) {}
 
         size_t hash() {}
 };

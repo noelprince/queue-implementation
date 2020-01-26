@@ -16,7 +16,7 @@ class String : public Object {
         // compares strings (in the same manner as strcmp)
         int compare(String* e) {}
 
-        bool equals(String* e) {}
+        bool equals(Object* e) {}
 
         size_t hash() {}
 }
