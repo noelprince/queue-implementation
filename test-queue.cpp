@@ -13,7 +13,6 @@ int main(int argc, char** argv) {
     Object* a = new Object();
     Object* b = new Object();
     Object* c = new Object(a);
-    t_false(a->equals(b));
     t_true(a->equals(c));
 
     // String tests
