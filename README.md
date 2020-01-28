@@ -15,3 +15,7 @@ Queue:
 - peek returns the head of the queue, but does not remove it
 - size returns the number of elements in the queue
 - equals compares the elements and order in the queue
+
+NOTE: 
+  - our Object and String classes were taken from a public repo another student (Chase Bishop) posted on piazza
+  - repo link: https://github.com/chasebish/cwc_object_string/blob/master/string.h
