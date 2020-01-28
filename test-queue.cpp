@@ -29,6 +29,8 @@ int main(int argc, char** argv) {
     // Queue tests
     Queue* x = new Queue();
     Queue* y = new Queue();
+    t_true(x->peek() == nullptr);
+    t_true(x->dequeue() == nullptr);
     x->enqueue(p)->enqueue(q);
     Queue* z = new Queue(x);
     t_false(x->equals(y));
@@ -40,6 +42,10 @@ int main(int argc, char** argv) {
     y->enqueue(p);
     t_true(x->equals(y));
     t_true(x->peek()->equals(q));
+    z->enqueue(a)->enqueue(b);
+    t_true(z->size() == 2);
+    t_true(z->dequeue()->equals(a));
+    t_true(z->peek()->equals(b));
 
     return 0;
 }
